@@ -11,9 +11,36 @@ sampleString = "We the People of the United States, in Order+ to form a more per
 ## 1) Start by counting the number of upper, lower, and other characters inthe provided string. Print your results.
 """
 
+lowers = 0;
+uppers = 0;
+not_letters = 0;
+
+for char in sampleString:
+  if char.islower():
+    new_string += char.upper()
+    lowers += 1
+  if char.isUpper():
+    new_string += char.lower()
+    uppers += 1
+  else:
+    newstring += char
+    not_letters += 1
+print(lowers, uppers, not_letters)
+
 # 2) Next, invert the case of all of the text in the sample string. Print the resulting string.
 
+print(newstring)
+
 # 3) Place all vowels in one list. 
+
+vowel_list = []
+consonant_list = []
+for char in sampleString:
+  if char in "aeiouy":
+    vowel_list.append(char)
+  elif char in "bcdfghjklmnpqrstvwxz"
+    consonant_list.append(char)
+  
 
 # 4) Place all consonant in another list. 
 
